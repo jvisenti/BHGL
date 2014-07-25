@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4522FB8180B14DB00B9D209 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FB7180B14DB00B9D209 /* Foundation.framework */; };
+		D4522FBA180B14DB00B9D209 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FB9180B14DB00B9D209 /* CoreGraphics.framework */; };
+		D4522FBC180B14DB00B9D209 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FBB180B14DB00B9D209 /* UIKit.framework */; };
+		D4522FC2180B14DB00B9D209 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4522FC0180B14DB00B9D209 /* InfoPlist.strings */; };
+		D4522FC4180B14DB00B9D209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4522FC3180B14DB00B9D209 /* main.m */; };
+		D4522FC8180B14DB00B9D209 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4522FC7180B14DB00B9D209 /* BHAppDelegate.m */; };
+		D4522FCA180B14DB00B9D209 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4522FC9180B14DB00B9D209 /* Images.xcassets */; };
+		D4522FD1180B14DB00B9D209 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FD0180B14DB00B9D209 /* XCTest.framework */; };
+		D4522FD2180B14DB00B9D209 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FB7180B14DB00B9D209 /* Foundation.framework */; };
+		D4522FD3180B14DB00B9D209 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4522FBB180B14DB00B9D209 /* UIKit.framework */; };
+		D4522FDB180B14DB00B9D209 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4522FD9180B14DB00B9D209 /* InfoPlist.strings */; };
+		D4522FDD180B14DB00B9D209 /* BHGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4522FDC180B14DB00B9D209 /* BHGLDemoTests.m */; };
+		D4522FE8180B152100B9D209 /* BHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4522FE7180B152100B9D209 /* BHViewController.m */; };
+		D4523003180B155900B9D209 /* BHCube.m in Sources */ = {isa = PBXBuildFile; fileRef = D4523000180B155900B9D209 /* BHCube.m */; };
+		D4523004180B155900B9D209 /* BHFish.m in Sources */ = {isa = PBXBuildFile; fileRef = D4523002180B155900B9D209 /* BHFish.m */; };
+		D4523007180B159200B9D209 /* SimpleFragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D4523005180B159200B9D209 /* SimpleFragment.fsh */; };
+		D4523008180B159200B9D209 /* SimpleVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D4523006180B159200B9D209 /* SimpleVertex.vsh */; };
+		D452300B180B15E100B9D209 /* item_powerup_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = D4523009180B15E100B9D209 /* item_powerup_fish.png */; };
+		D452300C180B15E100B9D209 /* tile_floor.png in Resources */ = {isa = PBXBuildFile; fileRef = D452300A180B15E100B9D209 /* tile_floor.png */; };
+		D4A7F63319831914008FC193 /* BHGLAnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F60F19831914008FC193 /* BHGLAnimatedObject.m */; };
+		D4A7F63419831914008FC193 /* BHGLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61119831914008FC193 /* BHGLAnimation.m */; };
+		D4A7F63519831914008FC193 /* BHGLBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61319831914008FC193 /* BHGLBasicAnimation.m */; };
+		D4A7F63619831914008FC193 /* BHGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61519831914008FC193 /* BHGLCamera.m */; };
+		D4A7F63719831914008FC193 /* BHGLCUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61619831914008FC193 /* BHGLCUtils.c */; };
+		D4A7F63819831914008FC193 /* BHGLKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61919831914008FC193 /* BHGLKeyframeAnimation.m */; };
+		D4A7F63919831914008FC193 /* BHGLLight.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61B19831914008FC193 /* BHGLLight.m */; };
+		D4A7F63A19831914008FC193 /* BHGLMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F61D19831914008FC193 /* BHGLMaterial.m */; };
+		D4A7F63B19831914008FC193 /* BHGLMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62019831914008FC193 /* BHGLMesh.m */; };
+		D4A7F63C19831914008FC193 /* BHGLModelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62219831914008FC193 /* BHGLModelNode.m */; };
+		D4A7F63D19831914008FC193 /* BHGLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62419831914008FC193 /* BHGLNode.m */; };
+		D4A7F63E19831914008FC193 /* BHGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62619831914008FC193 /* BHGLProgram.m */; };
+		D4A7F63F19831914008FC193 /* BHGLScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62919831914008FC193 /* BHGLScene.m */; };
+		D4A7F64019831914008FC193 /* BHGLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62B19831914008FC193 /* BHGLTextNode.m */; };
+		D4A7F64119831914008FC193 /* BHGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F62D19831914008FC193 /* BHGLTexture.m */; };
+		D4A7F64619831946008FC193 /* BHGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A7F64519831946008FC193 /* BHGLViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4522FD4180B14DB00B9D209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4522FAC180B14DB00B9D209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4522FB3180B14DB00B9D209;
+			remoteInfo = BHGLDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4522FB4180B14DB00B9D209 /* BHGLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHGLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4522FB7180B14DB00B9D209 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4522FB9180B14DB00B9D209 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4522FBB180B14DB00B9D209 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4522FBF180B14DB00B9D209 /* BHGLDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BHGLDemo-Info.plist"; sourceTree = "<group>"; };
+		D4522FC1180B14DB00B9D209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4522FC3180B14DB00B9D209 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4522FC5180B14DB00B9D209 /* BHGLDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BHGLDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D4522FC6180B14DB00B9D209 /* BHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
+		D4522FC7180B14DB00B9D209 /* BHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
+		D4522FC9180B14DB00B9D209 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4522FCF180B14DB00B9D209 /* BHGLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BHGLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4522FD0180B14DB00B9D209 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4522FD8180B14DB00B9D209 /* BHGLDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BHGLDemoTests-Info.plist"; sourceTree = "<group>"; };
+		D4522FDA180B14DB00B9D209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4522FDC180B14DB00B9D209 /* BHGLDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHGLDemoTests.m; sourceTree = "<group>"; };
+		D4522FE6180B152100B9D209 /* BHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHViewController.h; sourceTree = "<group>"; };
+		D4522FE7180B152100B9D209 /* BHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHViewController.m; sourceTree = "<group>"; };
+		D4522FFF180B155900B9D209 /* BHCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCube.h; sourceTree = "<group>"; };
+		D4523000180B155900B9D209 /* BHCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCube.m; sourceTree = "<group>"; };
+		D4523001180B155900B9D209 /* BHFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFish.h; sourceTree = "<group>"; };
+		D4523002180B155900B9D209 /* BHFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHFish.m; sourceTree = "<group>"; };
+		D4523005180B159200B9D209 /* SimpleFragment.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleFragment.fsh; sourceTree = "<group>"; };
+		D4523006180B159200B9D209 /* SimpleVertex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleVertex.vsh; sourceTree = "<group>"; };
+		D4523009180B15E100B9D209 /* item_powerup_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_powerup_fish.png; sourceTree = "<group>"; };
+		D452300A180B15E100B9D209 /* tile_floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile_floor.png; sourceTree = "<group>"; };
+		D4A7F60D19831914008FC193 /* BHGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGL.h; path = ../../Classes/BHGL.h; sourceTree = "<group>"; };
+		D4A7F60E19831914008FC193 /* BHGLAnimatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLAnimatedObject.h; path = ../../Classes/BHGLAnimatedObject.h; sourceTree = "<group>"; };
+		D4A7F60F19831914008FC193 /* BHGLAnimatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLAnimatedObject.m; path = ../../Classes/BHGLAnimatedObject.m; sourceTree = "<group>"; };
+		D4A7F61019831914008FC193 /* BHGLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLAnimation.h; path = ../../Classes/BHGLAnimation.h; sourceTree = "<group>"; };
+		D4A7F61119831914008FC193 /* BHGLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLAnimation.m; path = ../../Classes/BHGLAnimation.m; sourceTree = "<group>"; };
+		D4A7F61219831914008FC193 /* BHGLBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLBasicAnimation.h; path = ../../Classes/BHGLBasicAnimation.h; sourceTree = "<group>"; };
+		D4A7F61319831914008FC193 /* BHGLBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLBasicAnimation.m; path = ../../Classes/BHGLBasicAnimation.m; sourceTree = "<group>"; };
+		D4A7F61419831914008FC193 /* BHGLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLCamera.h; path = ../../Classes/BHGLCamera.h; sourceTree = "<group>"; };
+		D4A7F61519831914008FC193 /* BHGLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLCamera.m; path = ../../Classes/BHGLCamera.m; sourceTree = "<group>"; };
+		D4A7F61619831914008FC193 /* BHGLCUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BHGLCUtils.c; path = ../../Classes/BHGLCUtils.c; sourceTree = "<group>"; };
+		D4A7F61719831914008FC193 /* BHGLCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLCUtils.h; path = ../../Classes/BHGLCUtils.h; sourceTree = "<group>"; };
+		D4A7F61819831914008FC193 /* BHGLKeyframeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLKeyframeAnimation.h; path = ../../Classes/BHGLKeyframeAnimation.h; sourceTree = "<group>"; };
+		D4A7F61919831914008FC193 /* BHGLKeyframeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLKeyframeAnimation.m; path = ../../Classes/BHGLKeyframeAnimation.m; sourceTree = "<group>"; };
+		D4A7F61A19831914008FC193 /* BHGLLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLLight.h; path = ../../Classes/BHGLLight.h; sourceTree = "<group>"; };
+		D4A7F61B19831914008FC193 /* BHGLLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLLight.m; path = ../../Classes/BHGLLight.m; sourceTree = "<group>"; };
+		D4A7F61C19831914008FC193 /* BHGLMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLMaterial.h; path = ../../Classes/BHGLMaterial.h; sourceTree = "<group>"; };
+		D4A7F61D19831914008FC193 /* BHGLMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLMaterial.m; path = ../../Classes/BHGLMaterial.m; sourceTree = "<group>"; };
+		D4A7F61E19831914008FC193 /* BHGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLMath.h; path = ../../Classes/BHGLMath.h; sourceTree = "<group>"; };
+		D4A7F61F19831914008FC193 /* BHGLMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLMesh.h; path = ../../Classes/BHGLMesh.h; sourceTree = "<group>"; };
+		D4A7F62019831914008FC193 /* BHGLMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLMesh.m; path = ../../Classes/BHGLMesh.m; sourceTree = "<group>"; };
+		D4A7F62119831914008FC193 /* BHGLModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLModelNode.h; path = ../../Classes/BHGLModelNode.h; sourceTree = "<group>"; };
+		D4A7F62219831914008FC193 /* BHGLModelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLModelNode.m; path = ../../Classes/BHGLModelNode.m; sourceTree = "<group>"; };
+		D4A7F62319831914008FC193 /* BHGLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLNode.h; path = ../../Classes/BHGLNode.h; sourceTree = "<group>"; };
+		D4A7F62419831914008FC193 /* BHGLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLNode.m; path = ../../Classes/BHGLNode.m; sourceTree = "<group>"; };
+		D4A7F62519831914008FC193 /* BHGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLProgram.h; path = ../../Classes/BHGLProgram.h; sourceTree = "<group>"; };
+		D4A7F62619831914008FC193 /* BHGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLProgram.m; path = ../../Classes/BHGLProgram.m; sourceTree = "<group>"; };
+		D4A7F62719831914008FC193 /* BHGLRenderedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLRenderedObject.h; path = ../../Classes/BHGLRenderedObject.h; sourceTree = "<group>"; };
+		D4A7F62819831914008FC193 /* BHGLScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLScene.h; path = ../../Classes/BHGLScene.h; sourceTree = "<group>"; };
+		D4A7F62919831914008FC193 /* BHGLScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLScene.m; path = ../../Classes/BHGLScene.m; sourceTree = "<group>"; };
+		D4A7F62A19831914008FC193 /* BHGLTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLTextNode.h; path = ../../Classes/BHGLTextNode.h; sourceTree = "<group>"; };
+		D4A7F62B19831914008FC193 /* BHGLTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLTextNode.m; path = ../../Classes/BHGLTextNode.m; sourceTree = "<group>"; };
+		D4A7F62C19831914008FC193 /* BHGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLTexture.h; path = ../../Classes/BHGLTexture.h; sourceTree = "<group>"; };
+		D4A7F62D19831914008FC193 /* BHGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLTexture.m; path = ../../Classes/BHGLTexture.m; sourceTree = "<group>"; };
+		D4A7F62E19831914008FC193 /* BHGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLTypes.h; path = ../../Classes/BHGLTypes.h; sourceTree = "<group>"; };
+		D4A7F64419831946008FC193 /* BHGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHGLViewController.h; path = ../../Classes/iOS/BHGLViewController.h; sourceTree = "<group>"; };
+		D4A7F64519831946008FC193 /* BHGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHGLViewController.m; path = ../../Classes/iOS/BHGLViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4522FB1180B14DB00B9D209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4522FBA180B14DB00B9D209 /* CoreGraphics.framework in Frameworks */,
+				D4522FBC180B14DB00B9D209 /* UIKit.framework in Frameworks */,
+				D4522FB8180B14DB00B9D209 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4522FCC180B14DB00B9D209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4522FD1180B14DB00B9D209 /* XCTest.framework in Frameworks */,
+				D4522FD3180B14DB00B9D209 /* UIKit.framework in Frameworks */,
+				D4522FD2180B14DB00B9D209 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4522FAB180B14DB00B9D209 = {
+			isa = PBXGroup;
+			children = (
+				D4522FE9180B152A00B9D209 /* BHGL */,
+				D4522FBD180B14DB00B9D209 /* BHGLDemo */,
+				D4522FD6180B14DB00B9D209 /* BHGLDemoTests */,
+				D4522FB6180B14DB00B9D209 /* Frameworks */,
+				D4522FB5180B14DB00B9D209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4522FB5180B14DB00B9D209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FB4180B14DB00B9D209 /* BHGLDemo.app */,
+				D4522FCF180B14DB00B9D209 /* BHGLDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4522FB6180B14DB00B9D209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FB7180B14DB00B9D209 /* Foundation.framework */,
+				D4522FB9180B14DB00B9D209 /* CoreGraphics.framework */,
+				D4522FBB180B14DB00B9D209 /* UIKit.framework */,
+				D4522FD0180B14DB00B9D209 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4522FBD180B14DB00B9D209 /* BHGLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FC6180B14DB00B9D209 /* BHAppDelegate.h */,
+				D4522FC7180B14DB00B9D209 /* BHAppDelegate.m */,
+				D4522FE6180B152100B9D209 /* BHViewController.h */,
+				D4522FE7180B152100B9D209 /* BHViewController.m */,
+				D4522FFF180B155900B9D209 /* BHCube.h */,
+				D4523000180B155900B9D209 /* BHCube.m */,
+				D4523001180B155900B9D209 /* BHFish.h */,
+				D4523002180B155900B9D209 /* BHFish.m */,
+				D4523006180B159200B9D209 /* SimpleVertex.vsh */,
+				D4523005180B159200B9D209 /* SimpleFragment.fsh */,
+				D4523009180B15E100B9D209 /* item_powerup_fish.png */,
+				D452300A180B15E100B9D209 /* tile_floor.png */,
+				D4522FC9180B14DB00B9D209 /* Images.xcassets */,
+				D4522FBE180B14DB00B9D209 /* Supporting Files */,
+			);
+			path = BHGLDemo;
+			sourceTree = "<group>";
+		};
+		D4522FBE180B14DB00B9D209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FBF180B14DB00B9D209 /* BHGLDemo-Info.plist */,
+				D4522FC0180B14DB00B9D209 /* InfoPlist.strings */,
+				D4522FC3180B14DB00B9D209 /* main.m */,
+				D4522FC5180B14DB00B9D209 /* BHGLDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4522FD6180B14DB00B9D209 /* BHGLDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FDC180B14DB00B9D209 /* BHGLDemoTests.m */,
+				D4522FD7180B14DB00B9D209 /* Supporting Files */,
+			);
+			path = BHGLDemoTests;
+			sourceTree = "<group>";
+		};
+		D4522FD7180B14DB00B9D209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4522FD8180B14DB00B9D209 /* BHGLDemoTests-Info.plist */,
+				D4522FD9180B14DB00B9D209 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4522FE9180B152A00B9D209 /* BHGL */ = {
+			isa = PBXGroup;
+			children = (
+				D4A7F60D19831914008FC193 /* BHGL.h */,
+				D4A7F60E19831914008FC193 /* BHGLAnimatedObject.h */,
+				D4A7F60F19831914008FC193 /* BHGLAnimatedObject.m */,
+				D4A7F61019831914008FC193 /* BHGLAnimation.h */,
+				D4A7F61119831914008FC193 /* BHGLAnimation.m */,
+				D4A7F61219831914008FC193 /* BHGLBasicAnimation.h */,
+				D4A7F61319831914008FC193 /* BHGLBasicAnimation.m */,
+				D4A7F61419831914008FC193 /* BHGLCamera.h */,
+				D4A7F61519831914008FC193 /* BHGLCamera.m */,
+				D4A7F61619831914008FC193 /* BHGLCUtils.c */,
+				D4A7F61719831914008FC193 /* BHGLCUtils.h */,
+				D4A7F61819831914008FC193 /* BHGLKeyframeAnimation.h */,
+				D4A7F61919831914008FC193 /* BHGLKeyframeAnimation.m */,
+				D4A7F61A19831914008FC193 /* BHGLLight.h */,
+				D4A7F61B19831914008FC193 /* BHGLLight.m */,
+				D4A7F61C19831914008FC193 /* BHGLMaterial.h */,
+				D4A7F61D19831914008FC193 /* BHGLMaterial.m */,
+				D4A7F61E19831914008FC193 /* BHGLMath.h */,
+				D4A7F61F19831914008FC193 /* BHGLMesh.h */,
+				D4A7F62019831914008FC193 /* BHGLMesh.m */,
+				D4A7F62119831914008FC193 /* BHGLModelNode.h */,
+				D4A7F62219831914008FC193 /* BHGLModelNode.m */,
+				D4A7F62319831914008FC193 /* BHGLNode.h */,
+				D4A7F62419831914008FC193 /* BHGLNode.m */,
+				D4A7F62519831914008FC193 /* BHGLProgram.h */,
+				D4A7F62619831914008FC193 /* BHGLProgram.m */,
+				D4A7F62719831914008FC193 /* BHGLRenderedObject.h */,
+				D4A7F62819831914008FC193 /* BHGLScene.h */,
+				D4A7F62919831914008FC193 /* BHGLScene.m */,
+				D4A7F62A19831914008FC193 /* BHGLTextNode.h */,
+				D4A7F62B19831914008FC193 /* BHGLTextNode.m */,
+				D4A7F62C19831914008FC193 /* BHGLTexture.h */,
+				D4A7F62D19831914008FC193 /* BHGLTexture.m */,
+				D4A7F62E19831914008FC193 /* BHGLTypes.h */,
+				D4A7F64419831946008FC193 /* BHGLViewController.h */,
+				D4A7F64519831946008FC193 /* BHGLViewController.m */,
+			);
+			name = BHGL;
+			path = BHGLDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4522FB3180B14DB00B9D209 /* BHGLDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4522FE0180B14DB00B9D209 /* Build configuration list for PBXNativeTarget "BHGLDemo" */;
+			buildPhases = (
+				D4522FB0180B14DB00B9D209 /* Sources */,
+				D4522FB1180B14DB00B9D209 /* Frameworks */,
+				D4522FB2180B14DB00B9D209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BHGLDemo;
+			productName = BHGLDemo;
+			productReference = D4522FB4180B14DB00B9D209 /* BHGLDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4522FCE180B14DB00B9D209 /* BHGLDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4522FE3180B14DB00B9D209 /* Build configuration list for PBXNativeTarget "BHGLDemoTests" */;
+			buildPhases = (
+				D4522FCB180B14DB00B9D209 /* Sources */,
+				D4522FCC180B14DB00B9D209 /* Frameworks */,
+				D4522FCD180B14DB00B9D209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4522FD5180B14DB00B9D209 /* PBXTargetDependency */,
+			);
+			name = BHGLDemoTests;
+			productName = BHGLDemoTests;
+			productReference = D4522FCF180B14DB00B9D209 /* BHGLDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4522FAC180B14DB00B9D209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BH;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Brockenhaus Studio";
+				TargetAttributes = {
+					D4522FCE180B14DB00B9D209 = {
+						TestTargetID = D4522FB3180B14DB00B9D209;
+					};
+				};
+			};
+			buildConfigurationList = D4522FAF180B14DB00B9D209 /* Build configuration list for PBXProject "BHGLDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4522FAB180B14DB00B9D209;
+			productRefGroup = D4522FB5180B14DB00B9D209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4522FB3180B14DB00B9D209 /* BHGLDemo */,
+				D4522FCE180B14DB00B9D209 /* BHGLDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4522FB2180B14DB00B9D209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D452300B180B15E100B9D209 /* item_powerup_fish.png in Resources */,
+				D4522FC2180B14DB00B9D209 /* InfoPlist.strings in Resources */,
+				D4523008180B159200B9D209 /* SimpleVertex.vsh in Resources */,
+				D4522FCA180B14DB00B9D209 /* Images.xcassets in Resources */,
+				D452300C180B15E100B9D209 /* tile_floor.png in Resources */,
+				D4523007180B159200B9D209 /* SimpleFragment.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4522FCD180B14DB00B9D209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4522FDB180B14DB00B9D209 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4522FB0180B14DB00B9D209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A7F63719831914008FC193 /* BHGLCUtils.c in Sources */,
+				D4A7F63F19831914008FC193 /* BHGLScene.m in Sources */,
+				D4A7F64119831914008FC193 /* BHGLTexture.m in Sources */,
+				D4A7F63B19831914008FC193 /* BHGLMesh.m in Sources */,
+				D4A7F63619831914008FC193 /* BHGLCamera.m in Sources */,
+				D4522FE8180B152100B9D209 /* BHViewController.m in Sources */,
+				D4A7F63819831914008FC193 /* BHGLKeyframeAnimation.m in Sources */,
+				D4A7F64619831946008FC193 /* BHGLViewController.m in Sources */,
+				D4523003180B155900B9D209 /* BHCube.m in Sources */,
+				D4A7F63319831914008FC193 /* BHGLAnimatedObject.m in Sources */,
+				D4A7F63419831914008FC193 /* BHGLAnimation.m in Sources */,
+				D4A7F63D19831914008FC193 /* BHGLNode.m in Sources */,
+				D4522FC8180B14DB00B9D209 /* BHAppDelegate.m in Sources */,
+				D4A7F64019831914008FC193 /* BHGLTextNode.m in Sources */,
+				D4523004180B155900B9D209 /* BHFish.m in Sources */,
+				D4A7F63519831914008FC193 /* BHGLBasicAnimation.m in Sources */,
+				D4522FC4180B14DB00B9D209 /* main.m in Sources */,
+				D4A7F63C19831914008FC193 /* BHGLModelNode.m in Sources */,
+				D4A7F63E19831914008FC193 /* BHGLProgram.m in Sources */,
+				D4A7F63919831914008FC193 /* BHGLLight.m in Sources */,
+				D4A7F63A19831914008FC193 /* BHGLMaterial.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4522FCB180B14DB00B9D209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4522FDD180B14DB00B9D209 /* BHGLDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4522FD5180B14DB00B9D209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4522FB3180B14DB00B9D209 /* BHGLDemo */;
+			targetProxy = D4522FD4180B14DB00B9D209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4522FC0180B14DB00B9D209 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4522FC1180B14DB00B9D209 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4522FD9180B14DB00B9D209 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4522FDA180B14DB00B9D209 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4522FDE180B14DB00B9D209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4522FDF180B14DB00B9D209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4522FE1180B14DB00B9D209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHGLDemo/BHGLDemo-Prefix.pch";
+				INFOPLIST_FILE = "BHGLDemo/BHGLDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4522FE2180B14DB00B9D209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHGLDemo/BHGLDemo-Prefix.pch";
+				INFOPLIST_FILE = "BHGLDemo/BHGLDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4522FE4180B14DB00B9D209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BHGLDemo.app/BHGLDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHGLDemo/BHGLDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BHGLDemoTests/BHGLDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4522FE5180B14DB00B9D209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BHGLDemo.app/BHGLDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHGLDemo/BHGLDemo-Prefix.pch";
+				INFOPLIST_FILE = "BHGLDemoTests/BHGLDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4522FAF180B14DB00B9D209 /* Build configuration list for PBXProject "BHGLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4522FDE180B14DB00B9D209 /* Debug */,
+				D4522FDF180B14DB00B9D209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4522FE0180B14DB00B9D209 /* Build configuration list for PBXNativeTarget "BHGLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4522FE1180B14DB00B9D209 /* Debug */,
+				D4522FE2180B14DB00B9D209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4522FE3180B14DB00B9D209 /* Build configuration list for PBXNativeTarget "BHGLDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4522FE4180B14DB00B9D209 /* Debug */,
+				D4522FE5180B14DB00B9D209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4522FAC180B14DB00B9D209 /* Project object */;
+}

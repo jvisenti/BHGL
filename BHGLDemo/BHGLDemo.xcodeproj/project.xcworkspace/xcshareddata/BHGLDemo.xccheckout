@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4741D633-D145-478D-895A-0DC3928E386B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BHGLDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8098E3E6-F991-4671-88EA-CE729BF76BCD</key>
+		<string>https://github.com/jvisenti/BHGL</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BHGLDemo/BHGLDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8098E3E6-F991-4671-88EA-CE729BF76BCD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jvisenti/BHGL</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8098E3E6-F991-4671-88EA-CE729BF76BCD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8098E3E6-F991-4671-88EA-CE729BF76BCD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BHGL</string>
+		</dict>
+	</array>
+</dict>
+</plist>
