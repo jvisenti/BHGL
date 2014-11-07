@@ -53,7 +53,7 @@
     
     [self.scene render];
     
-    const GLenum discards[]  = {GL_COLOR_ATTACHMENT0_OES, GL_DEPTH_ATTACHMENT};
+    const GLenum discards[]  = {GL_COLOR_ATTACHMENT0, GL_DEPTH_ATTACHMENT};
     glDiscardFramebufferEXT(GL_FRAMEBUFFER, 2, discards);
 }
 
@@ -67,14 +67,15 @@
     [program setVertexAttribute:BHGLVertexAttribPosition forName:@"a_position"];
     [program setVertexAttribute:BHGLVertexAttribTexCoord0 forName:@"a_texCoord"];
     
-    /** Note: can alternatively use built in basic shaders by uncommenting the following code,
-        which has the same effect as the code above. **/
-     /* 
-      BHGLProgram *program = [[BHGLProgram alloc] initWithVertexShaderNamed:kBHGLBasicVertexShader fragmentShaderNamed:kBHGLBasicFragmentShader mvpUniform:kBHGLMVPUniformName];
-     
-     [program setVertexAttribute:BHGLVertexAttribPosition forName:kBHGLPositionAttributeName];
-     [program setVertexAttribute:BHGLVertexAttribTexCoord0 forName:kBHGLTexCoord0AttributeName];
-      */
+/** NOTE: Can alternatively use built-in basic shaders by uncommenting the following code,
+    which has the same effect as the code above. **/
+/*
+    BHGLProgram *program = [[BHGLProgram alloc] initWithVertexShaderNamed:kBHGLBasicVertexShader fragmentShaderNamed:kBHGLBasicFragmentShader];
+    
+    program.mvpUniformName = kBHGLMVPUniformName;
+    [program setVertexAttribute:BHGLVertexAttribPosition forName:kBHGLPositionAttributeName];
+    [program setVertexAttribute:BHGLVertexAttribTexCoord0 forName:kBHGLTexCoord0AttributeName];
+*/
     
     if ([program link])
     {
