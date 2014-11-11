@@ -43,19 +43,19 @@ extern void BHGLSetBlendEnabled(GLboolean enabled);
 extern void BHGLSetCullFaceEnabled(GLboolean enabled);
 
 /* state capturing */
-extern void BHGLSaveProgram();
-extern void BHGLRestoreProgram();
-extern void BHGLSaveVertexBuffer();
-extern void BHGLRestoreVertexBuffer();
-extern void BHGLSaveIndexBuffer();
-extern void BHGLRestoreIndexBuffer();
-extern void BHGLSaveVertexArray();
-extern void BHGLRestoreVertexArray();
-extern void BHGLSaveTexture2D();
-extern void BHGLRestoreTexture2D();
+extern void BHGLSaveProgram(void);
+extern void BHGLRestoreProgram(void);
+extern void BHGLSaveVertexBuffer(void);
+extern void BHGLRestoreVertexBuffer(void);
+extern void BHGLSaveIndexBuffer(void);
+extern void BHGLRestoreIndexBuffer(void);
+extern void BHGLSaveVertexArray(void);
+extern void BHGLRestoreVertexArray(void);
+extern void BHGLSaveTexture2D(void);
+extern void BHGLRestoreTexture2D(void);
 
 /* NOTE: Names are bound before returning!! */
-extern GLuint BHGLGenerateVertexArray();
+extern GLuint BHGLGenerateVertexArray(void);
 extern GLuint BHGLGenerateVertexBuffer(GLsizeiptr size, GLvoid *vertices, GLenum usage);
 extern GLuint BHGLGenerateIndexBuffer(GLsizeiptr size, GLuint *indices, GLenum usage);
 extern GLuint BHGLGenerateRGBATextureDefault(GLsizei width, GLsizei height, GLubyte *data);
@@ -74,7 +74,7 @@ extern GLuint BHGLCompileShaderf(const char *filePath, GLenum type);
 /* print functions */
 extern void BHGLprintShaderLog(GLuint shader);
 extern void BHGLprintProgramLog(GLuint program);
-extern GLenum BHGLError();
+extern GLenum BHGLError(void);
     
 #ifdef __cplusplus
 }

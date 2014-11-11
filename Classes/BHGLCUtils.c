@@ -403,67 +403,67 @@ void BHGLSetCullFaceEnabled(GLboolean enabled)
 #pragma mark - state capturing
 
 static GLint _saved_prog = 0;
-void BHGLSaveProgram()
+void BHGLSaveProgram(void)
 {
     glGetIntegerv(GL_CURRENT_PROGRAM, &_saved_prog);
 }
 
-void BHGLRestoreProgram()
+void BHGLRestoreProgram(void)
 {
     glUseProgram(_saved_prog);
     _saved_prog = 0;
 }
 
 static GLint _saved_vbo = 0;
-void BHGLSaveVertexBuffer()
+void BHGLSaveVertexBuffer(void)
 {
     glGetIntegerv(GL_ARRAY_BUFFER_BINDING, &_saved_vbo);
 }
 
-void BHGLRestoreVertexBuffer()
+void BHGLRestoreVertexBuffer(void)
 {
     glBindBuffer(GL_ARRAY_BUFFER, _saved_vbo);
     _saved_vbo = 0;
 }
 
 static GLint _saved_ibo = 0;
-void BHGLSaveIndexBuffer()
+void BHGLSaveIndexBuffer(void)
 {
     glGetIntegerv(GL_ELEMENT_ARRAY_BUFFER_BINDING, &_saved_ibo);
 }
 
-void BHGLRestoreIndexBuffer()
+void BHGLRestoreIndexBuffer(void)
 {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _saved_ibo);
     _saved_ibo = 0;
 }
 
 static GLint _saved_vao = 0;
-void BHGLSaveVertexArray()
+void BHGLSaveVertexArray(void)
 {
     glGetIntegerv(BHGL_VERTEX_ARRAY_BINDING, &_saved_vao);
     _saved_vao = 0;
 }
 
-void BHGLRestoreVertexArray()
+void BHGLRestoreVertexArray(void)
 {
     BHGLBindVertexArray(_saved_vao);
 }
 
 static GLint _saved_tex;
-void BHGLSaveTexture2D()
+void BHGLSaveTexture2D(void)
 {
     glGetIntegerv(GL_TEXTURE_BINDING_2D, &_saved_tex);
 }
 
-void BHGLRestoreTexture2D()
+void BHGLRestoreTexture2D(void)
 {
     glBindTexture(GL_TEXTURE_2D, _saved_tex);
 }
 
 #pragma mark - object creation
 
-GLuint BHGLGenerateVertexArray()
+GLuint BHGLGenerateVertexArray(void)
 {
     GLuint vertexArray;
 #ifdef GL_ES_VERSION_2_0
