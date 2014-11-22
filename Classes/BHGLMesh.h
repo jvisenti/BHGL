@@ -52,4 +52,7 @@
     @param faceCount the number of faces in the mesh */
 - (id)initWithVertexData:(const GLvoid *)vertexData vertexDataSize:(GLsizeiptr)vertexDataSize vertexType:(BHGLVertexType *)vertexType;
 
+- (void)destroyVao;
+- (void)recreateVao;
+
 @end

@@ -15,12 +15,12 @@
 
 /** Initializes context, shaders, VBOs, etc.
     Subclasses should call the super implementation at the start of their implementations.
-    @note Super takes care of creating context. */
+    @note Default implementation sets the current context. */
 - (void)setupGL;
 
 /** Tears down context, shaders, VBOs, etc.
     Subclasses should call the super implementation at the end of their implementations.
-    @note Super takes care of clearing context. Be careful of deleting any shared resources. */
+    @note Super takes care of clearing contexts. Be careful of deleting any shared resources. */
 - (void)teardownGL;
 
 /* This method is documented as part of GLKViewController, but is not declared in the interface */
@@ -28,7 +28,7 @@
     Default implementation recursively updates the scene. */
 - (void)update;
 
-/** Creates a new context using the latest available API. */
-+ (EAGLContext *)bestContext;
+- (void)performOnBackgroundContext:(void (^)(void))block completion:(void (^)(void))completion;
+- (void)performOnMainContext:(void (^)(void))block completion:(void (^)(void))completion;
 
 @end

@@ -100,6 +100,33 @@
     });
 }
 
+- (void)destroyVao
+{
+    BHGLDeleteVertexArrays(1, &_vertexArray);
+}
+
+- (void)recreateVao
+{
+    BHGLSaveVertexArray();
+    BHGLSaveVertexBuffer();
+    
+    _vertexArray = BHGLGenerateVertexArray();
+    
+    BHGLBindBufferSet(self.bufferSet);
+    
+    BHGLVertexAttribInfo *attribs = BHGLVertexAttributesForVertexType(&_vertexType);
+    for (int i = 0; i < self.vertexType.numAttribs; i++)
+    {
+        BHGLVertexAttribInfo info = attribs[i];
+        glEnableVertexAttribArray(info.index);
+        glVertexAttribPointer(info.index, info.length, info.type, info.normalized, info.stride, info.ptr);
+    }
+    free(attribs);
+    
+    BHGLRestoreVertexArray();
+    BHGLRestoreVertexBuffer();
+}
+
 #pragma mark - BHGLRenderedObject
 
 - (void)render

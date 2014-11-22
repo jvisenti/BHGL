@@ -442,7 +442,7 @@ static NSSet *BHGLShaders;
     NSString *format = @"%@.%@";
     
     glUniform1i([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"type"]], lightInfo.type);
-    glUniform1i([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"enabled"]], lightInfo.enabled);
+    glUniform1f([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"enabled"]], (lightInfo.enabled ? 1.0f : 0.0f));
     glUniform4fv([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"ambientColor"]], 1, lightInfo.ambientColor.c);
     glUniform4fv([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"diffuseColor"]], 1, lightInfo.diffuseColor.c);
     glUniform4fv([self uniformPosition:[NSString stringWithFormat:format, uniformName, @"specularColor"]], 1, lightInfo.specularColor.c);
