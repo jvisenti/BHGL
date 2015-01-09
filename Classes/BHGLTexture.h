@@ -6,7 +6,7 @@
 //
 // NOTE: currently no support for mipmaps or cubemaps
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <GLKit/GLKTextureLoader.h>
 #import "BHGLTypes.h"
 
