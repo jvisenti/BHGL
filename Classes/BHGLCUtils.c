@@ -571,7 +571,10 @@ GLuint BHGLCompileShader(const GLchar *shaderString, GLenum type)
     GLint success;
     glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
     
-    BHGLprintShaderLog(shader);
+    if (success != GL_TRUE)
+    {
+        BHGLprintShaderLog(shader);
+    }
 #endif
     
     return shader;
