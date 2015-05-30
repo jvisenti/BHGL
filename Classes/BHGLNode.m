@@ -23,7 +23,8 @@
 
 @implementation BHGLNode
 
-@synthesize modelMatrix = _modelMatrix;
+@dynamic modelMatrix;
+
 @synthesize parent = _parent;
 @synthesize scene = _scene;
 
