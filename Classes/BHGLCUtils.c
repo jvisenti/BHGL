@@ -294,7 +294,7 @@ void BHGLBindVertexArray(GLuint vao)
 {
     if (vao != _bound_vao)
     {
-#ifndef GL_ES_VERSION_3_0
+#if defined(GL_ES_VERSION_2_0) && !defined(GL_ES_VERSION_3_0)
         glBindVertexArrayOES(vao);
 #else
         glBindVertexArray(vao);
@@ -466,7 +466,7 @@ void BHGLRestoreTexture2D(void)
 GLuint BHGLGenerateVertexArray(void)
 {
     GLuint vertexArray;
-#ifndef GL_ES_VERSION_3_0
+#if defined(GL_ES_VERSION_2_0) && !defined(GL_ES_VERSION_3_0)
     glGenVertexArraysOES(1, &vertexArray);
 #else
     glGenVertexArrays(1, &vertexArray);
@@ -549,7 +549,7 @@ GLboolean BHGLLinkProgram(GLuint program)
 
 void BHGLDeleteVertexArrays(GLsizei n, const GLuint *vertexArrays)
 {
-#ifndef GL_ES_VERSION_3_0
+#if defined(GL_ES_VERSION_2_0) && !defined(GL_ES_VERSION_3_0)
     glDeleteVertexArraysOES(n, vertexArrays);
 #else
     glDeleteVertexArrays(n, vertexArrays);
