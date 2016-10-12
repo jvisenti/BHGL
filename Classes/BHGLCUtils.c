@@ -110,6 +110,7 @@ BHGLVertexType BHGLVertexTypeCreateWithType(BHGLEnum vType)
         }
             
         case BHGL_NTEXTURE_VERTEX:
+        default:
         {
             v = BHGLVertexTypeCreate(3);
             
@@ -137,9 +138,6 @@ BHGLVertexType BHGLVertexTypeCreateWithType(BHGLEnum vType)
             
             break;
         }
-            
-        default:
-            break;
     }
     
     return v;
